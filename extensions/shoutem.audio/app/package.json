@@ -1,0 +1,23 @@
+{
+  "name": "shoutem.audio",
+  "version": "6.0.0-build1711719598422",
+  "description": "Track player components for other extensions to utilize.",
+  "scripts": {
+    "prebuild": "node -e 'require(\"./build\").runPreBuild()'"
+  },
+  "dependencies": {
+    "@react-native-community/slider": "4.5.0",
+    "react-native-track-player": "4.0.1",
+    "xcode": "3.0.1"
+  },
+  "peerDependencies": {
+    "@shoutem/redux-composers": "*",
+    "@shoutem/redux-io": "*",
+    "@shoutem/theme": "*",
+    "@shoutem/ui": "*"
+  },
+  "nativeDependencies": [
+    "react-native-track-player",
+    "@react-native-community/slider"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "application",
+  "version": "6.2.1",
+  "platform": ">=13.0.4",
+  "type": "system",
+  "title": "Application",
+  "description": "System Shoutem extension that initializes and configures the application",
+  "releaseNotes": "* Added app analytics",
+  "nativeChanges": {
+    "lastVersion": "4.1.4"
+  },
+  "icon": "server/assets/add-application-image.png",
+  "categories": [],
+  "dependencies": [
+    "shoutem.i18n",
+    "shoutem.navigation",
+    "shoutem.redux",
+    "shoutem.theme",
+    "shoutem.google-analytics"
+  ],
+  "screens": [
+    {
+      "name": "SubscriptionMissingScreen"
+    }
+  ],
+  "pages": [
+    {
+      "name": "AppSettingsPage",
+      "type": "react-page"
+    },
+    {
+      "name": "AppAnalyticsPage",
+      "type": "react-page"
+    }
+  ],
+  "settings": {
+    "imageResizingActive": true
+  },
+  "settingsPages": [
+    {
+      "page": "@.AppSettingsPage",
+      "title": "Settings"
+    },
+    {
+      "page": "@.AppAnalyticsPage",
+      "title": "Application",
+      "categories": [
+        "analytics"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "layouts",
+  "version": "7.0.2",
+  "platform": ">=13.0.7",
+  "type": "system",
+  "title": "Layouts",
+  "description": "Extension that enables app creator to choose between different layouts of the same screen",
+  "releaseNotes": "* No user facing changes\n Dev changes - created animation hook",
+  "icon": "server/assets/add-layouts-image.png",
+  "dependencies": [
+    "shoutem.i18n"
+  ],
+  "categories": [],
+  "i18n": {
+    "locale": "en",
+    "translationPath": "server/translations/en.json"
+  },
+  "pages": [
+    {
+      "name": "LayoutPage",
+      "type": "native-component",
+      "path": "dummy.js"
+    }
+  ],
+  "extensionThemes": [
+    {
+      "name": "Theme",
+      "path": "server/themes/theme.json"
+    }
+  ],
+  "settingsPages": [
+    {
+      "page": "shoutem.theme.ExtensionThemeSettingsPage",
+      "title": "Settings",
+      "categories": [
+        "style"
+      ],
+      "parameters": {
+        "extensionTheme": "Theme"
+      }
+    }
+  ]
+}

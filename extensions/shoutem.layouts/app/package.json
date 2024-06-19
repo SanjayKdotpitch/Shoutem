@@ -1,0 +1,12 @@
+{
+  "name": "shoutem.layouts",
+  "version": "7.0.2-build1711719363267",
+  "peerDependencies": {
+    "@shoutem/theme": "*",
+    "@shoutem/ui": "*",
+    "react-native-linear-gradient": "*"
+  },
+  "dependencies": {
+    "react-native-shimmer-placeholder": "2.0.8"
+  }
+}

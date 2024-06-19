@@ -1,0 +1,14 @@
+{
+  "name": "shoutem.permissions",
+  "version": "5.1.0-build1711459282160",
+  "description": "Extension for app permission management. ",
+  "scripts": {
+    "prebuild": "node -e 'require(\"./build\").runPreBuild()'"
+  },
+  "dependencies": {
+    "react-native-permissions": "4.1.5"
+  },
+  "nativeDependencies": [
+    "react-native-permissions"
+  ]
+}
